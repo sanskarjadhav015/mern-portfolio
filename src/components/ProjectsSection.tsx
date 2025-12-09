@@ -34,7 +34,6 @@ const projects = [
     ],
     gradient: "from-cyan-500/20 to-teal-500/20",
     github: "https://github.com/sanskarjadhav015/estate-hub",
-    //live: "https://estatehub.infinityfreeapp.com",
   },
 
   {
@@ -52,7 +51,6 @@ const projects = [
     ],
     gradient: "from-orange-500/20 to-pink-500/20",
     github: "https://github.com/sanskarjadhav015/news-recommendation-system",
-    //live: "",
   },
 
   {
@@ -70,13 +68,12 @@ const projects = [
     ],
     gradient: "from-green-500/20 to-emerald-500/20",
     github: "https://github.com/sanskarjadhav015/customer-segmentation-system",
-    //live: "",
   },
 
   {
     icon: Brain,
     title: "Chronic Kidney Disease Prediction System",
-    subtitle: "Healthcare Machine Learning App",
+    subtitle: "Healthcare ML App",
     date: "2025",
     tech: ["Python", "Scikit-learn", "Flask", "Pandas", "NumPy"],
     description:
@@ -87,8 +84,8 @@ const projects = [
       "Built user-friendly medical input interface",
     ],
     gradient: "from-red-500/20 to-rose-500/20",
-    github: "https://github.com/sanskarjadhav015/chronic-kidney-disease-prediction",
-    //live: "",
+    github:
+      "https://github.com/sanskarjadhav015/chronic-kidney-disease-prediction",
   },
 
   {
@@ -105,8 +102,8 @@ const projects = [
       "Achieved high R² score on test dataset",
     ],
     gradient: "from-indigo-500/20 to-blue-500/20",
-    github: "https://github.com/sanskarjadhav015/car-price-prediction-system",
-    //live: "",
+    github:
+      "https://github.com/sanskarjadhav015/car-price-prediction-system",
   },
 
   {
@@ -124,42 +121,106 @@ const projects = [
     ],
     gradient: "from-lime-500/20 to-green-500/20",
     github: "https://github.com/sanskarjadhav015/crop-recommendation-system",
-    //live: "",
   },
-  {
-  icon: Brain,
-  title: "Crop Yield Prediction System",
-  subtitle: "Agriculture Production Forecasting",
-  date: "2025",
-  tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "Streamlit"],
-  description:
-    "A machine learning system that predicts crop yield based on environmental factors and agricultural parameters.",
-  highlights: [
-    "Built regression model to estimate crop yield",
-    "Preprocessed agricultural datasets for accurate predictions",
-    "Interactive Streamlit web app for user-friendly predictions",
-  ],
-  gradient: "from-yellow-500/20 to-orange-500/20",
-  github: "https://github.com/sanskarjadhav015/crop-yield-prediction",
-  //live: "",
-},
 
   {
-  icon: Brain,
-  title: "Movie Recommendation System",
-  subtitle: "Content-Based Recommendation Engine",
-  date: "2025",
-  tech: ["Python", "Scikit-learn", "Flask", "Pandas", "NumPy"],
-  description:
-    "A movie recommendation system that suggests similar movies using TF-IDF vectorization and cosine similarity.",
-  highlights: [
-    "Uses TF-IDF and cosine similarity for recommendations",
-    "Built with Flask backend and responsive UI",
-    "Provides instant similar movie suggestions based on user input",
-  ],
-  gradient: "from-purple-500/20 to-indigo-500/20",
-  github: "https://github.com/sanskarjadhav015/movie-recommendation-system",
- // live: "",
-}
+    icon: Brain,
+    title: "Crop Yield Prediction System",
+    subtitle: "Agriculture Production Forecasting",
+    date: "2025",
+    tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "Streamlit"],
+    description:
+      "A machine learning system that predicts crop yield based on environmental factors and agricultural parameters.",
+    highlights: [
+      "Built regression model to estimate crop yield",
+      "Preprocessed agricultural datasets for accurate predictions",
+      "Interactive Streamlit web app for user-friendly predictions",
+    ],
+    gradient: "from-yellow-500/20 to-orange-500/20",
+    github: "https://github.com/sanskarjadhav015/crop-yield-prediction",
+  },
 
+  {
+    icon: Brain,
+    title: "Movie Recommendation System",
+    subtitle: "Content-Based Recommendation Engine",
+    date: "2025",
+    tech: ["Python", "Scikit-learn", "Flask", "Pandas", "NumPy"],
+    description:
+      "A movie recommendation system that suggests similar movies using TF-IDF vectorization and cosine similarity.",
+    highlights: [
+      "Uses TF-IDF and cosine similarity for recommendations",
+      "Built with Flask backend and responsive UI",
+      "Provides instant similar movie suggestions based on user input",
+    ],
+    gradient: "from-purple-500/20 to-indigo-500/20",
+    github: "https://github.com/sanskarjadhav015/movie-recommendation-system",
+  },
 ];
+
+/* ------------------------------------
+   UI SECTION COMPONENT
+------------------------------------ */
+const ProjectsSection = () => {
+  return (
+    <section id="projects" className="py-20 px-6 max-w-6xl mx-auto">
+      <h2 className="text-4xl font-bold mb-10 text-gradient">Projects</h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {projects.map((project, index) => {
+          const Icon = project.icon;
+
+          return (
+            <div
+              key={index}
+              className={`p-6 rounded-xl bg-black/20 border border-white/10 shadow-lg hover:shadow-xl transition-all gradient-border`}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <Icon className="w-8 h-8 text-primary" />
+                <div>
+                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                  <p className="text-sm text-muted-foreground">
+                    {project.subtitle}
+                  </p>
+                </div>
+              </div>
+
+              <p className="mb-4 text-sm text-muted-foreground">
+                {project.description}
+              </p>
+
+              <h4 className="text-sm font-semibold mb-2">Highlights:</h4>
+              <ul className="list-disc ml-5 mb-4 text-sm">
+                {project.highlights.map((h, i) => (
+                  <li key={i}>{h}</li>
+                ))}
+              </ul>
+
+              <div className="flex gap-3 mt-4">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  className="px-4 py-2 rounded-lg bg-primary text-black font-semibold hover:opacity-80 transition"
+                >
+                  GitHub
+                </a>
+
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    className="px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white font-semibold hover:bg-white/20 transition"
+                  >
+                    Live Demo
+                  </a>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+};
+
+export default ProjectsSection;

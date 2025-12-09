@@ -1,9 +1,18 @@
+/* -------------------------------
+   Global Font Import (MUST be first)
+-------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* -------------------------------
+   Tailwind Layers
+-------------------------------- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
-
+/* -------------------------------
+   Root Theme Variables
+-------------------------------- */
 @layer base {
   :root {
     --background: 228 15% 6%;
@@ -41,7 +50,7 @@
     --gradient-start: 185 84% 50%;
     --gradient-end: 200 100% 45%;
     --text-gradient: linear-gradient(135deg, hsl(185 84% 50%), hsl(200 100% 55%));
-    
+
     --font-display: 'JetBrains Mono', monospace;
     --font-body: 'Inter', sans-serif;
 
@@ -56,6 +65,9 @@
   }
 }
 
+/* -------------------------------
+   Base Styles
+-------------------------------- */
 @layer base {
   * {
     @apply border-border;
@@ -75,6 +87,9 @@
   }
 }
 
+/* -------------------------------
+   Utility Classes
+-------------------------------- */
 @layer utilities {
   .text-gradient {
     background: var(--text-gradient);
