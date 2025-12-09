@@ -13,7 +13,7 @@ const skillCategories = [
   },
   {
     title: "Backend",
-    skills: ["Spring Boot", "Node.js", "MySQL", "PHP"],
+    skills: ["Flask", "Node.js", "MySQL", "PHP"],
   },
   {
     title: "AI/ML",

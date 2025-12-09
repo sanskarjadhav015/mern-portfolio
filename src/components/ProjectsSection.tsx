@@ -16,7 +16,7 @@ const projects = [
     ],
     gradient: "from-purple-500/20 to-cyan-500/20",
     github: "https://github.com/sanskarjadhav015/brain-tumor-detector",
-    live: "",
+    live: "https://braintumardetector.vercel.app/",
   },
 
   {
@@ -34,7 +34,7 @@ const projects = [
     ],
     gradient: "from-cyan-500/20 to-teal-500/20",
     github: "https://github.com/sanskarjadhav015/estate-hub",
-    live: "https://estatehub.infinityfreeapp.com",
+    //live: "https://estatehub.infinityfreeapp.com",
   },
 
   {
@@ -52,7 +52,7 @@ const projects = [
     ],
     gradient: "from-orange-500/20 to-pink-500/20",
     github: "https://github.com/sanskarjadhav015/news-recommendation-system",
-    live: "",
+    //live: "",
   },
 
   {
@@ -70,7 +70,7 @@ const projects = [
     ],
     gradient: "from-green-500/20 to-emerald-500/20",
     github: "https://github.com/sanskarjadhav015/customer-segmentation-system",
-    live: "",
+    //live: "",
   },
 
   {
@@ -88,7 +88,7 @@ const projects = [
     ],
     gradient: "from-red-500/20 to-rose-500/20",
     github: "https://github.com/sanskarjadhav015/chronic-kidney-disease-prediction",
-    live: "",
+    //live: "",
   },
 
   {
@@ -106,7 +106,7 @@ const projects = [
     ],
     gradient: "from-indigo-500/20 to-blue-500/20",
     github: "https://github.com/sanskarjadhav015/car-price-prediction-system",
-    live: "",
+    //live: "",
   },
 
   {
@@ -124,6 +124,42 @@ const projects = [
     ],
     gradient: "from-lime-500/20 to-green-500/20",
     github: "https://github.com/sanskarjadhav015/crop-recommendation-system",
-    live: "",
+    //live: "",
   },
+  {
+  icon: Brain,
+  title: "Crop Yield Prediction System",
+  subtitle: "Agriculture Production Forecasting",
+  date: "2025",
+  tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "Streamlit"],
+  description:
+    "A machine learning system that predicts crop yield based on environmental factors and agricultural parameters.",
+  highlights: [
+    "Built regression model to estimate crop yield",
+    "Preprocessed agricultural datasets for accurate predictions",
+    "Interactive Streamlit web app for user-friendly predictions",
+  ],
+  gradient: "from-yellow-500/20 to-orange-500/20",
+  github: "https://github.com/sanskarjadhav015/crop-yield-prediction",
+  //live: "",
+},
+
+  {
+  icon: Brain,
+  title: "Movie Recommendation System",
+  subtitle: "Content-Based Recommendation Engine",
+  date: "2025",
+  tech: ["Python", "Scikit-learn", "Flask", "Pandas", "NumPy"],
+  description:
+    "A movie recommendation system that suggests similar movies using TF-IDF vectorization and cosine similarity.",
+  highlights: [
+    "Uses TF-IDF and cosine similarity for recommendations",
+    "Built with Flask backend and responsive UI",
+    "Provides instant similar movie suggestions based on user input",
+  ],
+  gradient: "from-purple-500/20 to-indigo-500/20",
+  github: "https://github.com/sanskarjadhav015/movie-recommendation-system",
+ // live: "",
+}
+
 ];

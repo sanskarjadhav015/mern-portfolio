@@ -139,7 +139,7 @@ const HeroSection = () => {
             </a>
 
             <a
-              href="https://linkedin.com/in/jadhav-sanskar-kishor"
+              href="https://www.linkedin.com/in/jadhav-sanskar-kishor-722a52258?utm_source=share_via&utm_content=profile&utm_medium=member_android"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"

@@ -25,7 +25,7 @@ const ContactSection = () => {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Jadhav Sanskar Kishor",
-      href: "https://linkedin.com/in/jadhav-sanskar-kishor",
+      href: "https://www.linkedin.com/in/jadhav-sanskar-kishor-722a52258?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     },
   ];
 
