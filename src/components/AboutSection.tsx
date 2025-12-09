@@ -50,7 +50,7 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-muted-foreground leading-relaxed">
-                I'm <span className="text-foreground font-medium">Sanskar Jadhav</span>, a Java Full Stack Developer 
+                I'm <span className="text-foreground font-medium">Sanskar Jadhav</span>, a Full Stack Developer 
                 passionate about building modern, scalable applications. I have experience developing dynamic user 
                 interfaces, backend APIs, and database systems using Java, Spring Boot, MySQL, React.js, and Node.js.
               </p>
