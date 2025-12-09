@@ -15,7 +15,7 @@ const projects = [
       "Built complete training pipeline and prediction UI",
     ],
     gradient: "from-purple-500/20 to-cyan-500/20",
-    github: "https://github.com/sanskarjadhav015/brain-tumor-detector",
+    github: "https://github.com/sanskarjadhav015/brain_tumar_detector",
     live: "https://braintumardetector.vercel.app/",
   },
 
@@ -33,7 +33,7 @@ const projects = [
       "Built clean, interactive UI components",
     ],
     gradient: "from-cyan-500/20 to-teal-500/20",
-    github: "https://github.com/sanskarjadhav015/estate-hub",
+    github: "https://github.com/sanskarjadhav015/estate-hub-project",
   },
 
   {
@@ -50,7 +50,7 @@ const projects = [
       "Processed and cleaned large text datasets",
     ],
     gradient: "from-orange-500/20 to-pink-500/20",
-    github: "https://github.com/sanskarjadhav015/news-recommendation-system",
+    github: "https://github.com/sanskarjadhav015/news-article-recommendation-system",
   },
 
   {
@@ -67,7 +67,7 @@ const projects = [
       "Derived marketing insights from clustered data",
     ],
     gradient: "from-green-500/20 to-emerald-500/20",
-    github: "https://github.com/sanskarjadhav015/customer-segmentation-system",
+    github: "https://github.com/sanskarjadhav015/customer-segmentation-with-kmeans",
   },
 
   {
@@ -85,7 +85,7 @@ const projects = [
     ],
     gradient: "from-red-500/20 to-rose-500/20",
     github:
-      "https://github.com/sanskarjadhav015/chronic-kidney-disease-prediction",
+      "https://github.com/sanskarjadhav015/Chronic-Kidney-DiseasePrediction-System",
   },
 
   {
@@ -103,7 +103,7 @@ const projects = [
     ],
     gradient: "from-indigo-500/20 to-blue-500/20",
     github:
-      "https://github.com/sanskarjadhav015/car-price-prediction-system",
+      "https://github.com/sanskarjadhav015/car-price-prediction",
   },
 
   {
@@ -137,7 +137,7 @@ const projects = [
       "Interactive Streamlit web app for user-friendly predictions",
     ],
     gradient: "from-yellow-500/20 to-orange-500/20",
-    github: "https://github.com/sanskarjadhav015/crop-yield-prediction",
+    github: "https://github.com/sanskarjadhav015/crop-yield-predictorn",
   },
 
   {
